@@ -33,7 +33,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - AYEBALE NELLY ABIGAIL
 
 ## FIGMA BLUEPRINT
-[Figma-Blueprint](https://www.figma.com/file/DkqNlZZC4l7kpKXDb2kTRv/Untitled?node-id=0%3A1)
+[Figma-Blueprint](https://www.figma.com/file/DkqNlZZC4l7kpKXDb2kTRv/News?node-id=0%3A1)
 
 [MIT](LICENSE) © 
 
