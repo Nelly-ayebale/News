@@ -1,19 +1,19 @@
 import urllib.request,json
 from .models import News
 
-api_key = None
+apiKey = None
 news_url = None
 
 def configure_request(app):
-    global api_key, news_url
-    api_key = app.config['NEWS_API_KEY']
+    global apiKey, news_url
+    apiKey = app.config['NEWS_API_KEY']
     news_url = app.config['NEWS_SOURCE_BASE_URL']
 
 def get_news(category):
     '''
     Function that gets the json response to the url request
     '''
-    get_news_url = news_url.format(category,api_key)
+    get_news_url = news_url.format(category,apiKey)
 
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
