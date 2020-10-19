@@ -10,6 +10,7 @@
         <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 gen_news-card">
             <h3>{{gen_news.name}}</h3>
             <p>{{gen_news.description|truncate(100)}}</p>
+            <a href="/articles/{{gen_news.id}}">Read {{gen_news.name}}'s articles</a>
         </div>
 
         {% endfor %}
@@ -27,7 +28,7 @@
             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 tech_news-card">
                 <h3>{{tech_news.name}}</h3>
                 <p>{{tech_news.description|truncate(100)}}</p>
-
+                <a href="/articles/{{tech_news.id}}">Read {{tech_news.name}}'s articles</a>
             </div>
             {% endfor %}
         </div>
@@ -43,6 +44,7 @@
             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 bus_news-card">
                 <h3>{{bus_news.name}}</h3>
                 <p>{{bus_news.description|truncate(100)}}</p>
+                <a href="/articles/{{bus_news.id}}">Read {{bus_news.name}}'s articles</a>
             </div>
             {% endfor %}
         </div>
@@ -58,6 +60,7 @@
             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 ent_news-card">
                 <h3>{{ent_news.name}}</h3>
                 <p>{{ent_news.description|truncate(100)}}</p>
+                <a href="/articles/{{ent_news.id}}">Read {{ent_news.name}}'s articles</a>
             </div>
             {% endfor %}
 
@@ -73,6 +76,7 @@
             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 sports_news-card">
                 <h3>{{sports_news.name}}</h3>
                 <p>{{sports_news.description|truncate(100)}}</p>
+                <a href="/articles/{{sports_news.id}}">Read {{sports_news.name}}'s articles</a>
             </div>
             {% endfor %}
 

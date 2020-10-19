@@ -18,3 +18,11 @@ def index():
 
     return render_template('index.html', title = title, general = gen_news, technology = tech_news, business= bus_news, entertainment = ent_news, sports = sport_news)
 
+@main.route('/articles/<source_id>')
+def articles(source_id):
+    '''
+    Function that returns the articles page and it's data
+    '''
+    title = f'{source_id}'
+    articles_return = get_articles(source_id)
+    return render_template('articles.html' title = title, articles = articles_return)
