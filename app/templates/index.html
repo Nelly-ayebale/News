@@ -3,17 +3,20 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <h3 class="text-center">GENERAL NEWS</h3>
 
-            {% for gen_news in general%}
-            <h4>{{gen_news.name}}</h4>
-            <p>{{gen_news.description}}</p>
-            {% endfor %}
+        <h3 class="text-center">GENERAL NEWS</h3>
 
+        {% for gen_news in general%}
+        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 gen_news-card">
+            <h3>{{gen_news.name}}</h3>
+            <p>{{gen_news.description|truncate(100)}}</p>
         </div>
+
+        {% endfor %}
+
     </div>
 </div>
+
 <div class="container-fluid">
     <div class="row">
 
@@ -61,6 +64,7 @@
             <h3 class="text-center">SPORTS NEWS</h3>
 
             {% for sports_news in sports %}
+
             <h4>{{sports_news.name}}</h4>
             <p>{{sports_news.description}}</p>
             {% endfor %}
