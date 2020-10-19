@@ -10,8 +10,8 @@ class NewsTest(unittest.TestCase):
         '''
         Setup method that will run before each test
         '''
-        self.new_news = News('abc', 'ABC NEWS','The best news worldwide','www.abc.com', 'general', 'UK')
+        self.new_news = News('abc', 'ABC NEWS', 'The best news worldwide', 'www.abc.com', 'general', 'UK')
     
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_news, News))
+        self.assertTrue(isinstance(self.new_news,News))
         

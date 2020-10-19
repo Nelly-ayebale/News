@@ -3,8 +3,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border">
-            <h3>GENERAL NEWS</h3>
+        <div class="col-md-12">
+            <h3 class="text-center">GENERAL NEWS</h3>
 
             {% for gen_news in general%}
             <h4>{{gen_news.name}}</h4>
@@ -14,11 +14,11 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border">
-            <h3>TECHNOLOGY NEWS</h3>
+
+        <div class="col-md-12">
+            <h3 class="text-center">TECHNOLOGY NEWS</h3>
 
             {% for tech_news in technology %}
             <h4>{{tech_news.name}}</h4>
@@ -26,13 +26,13 @@
             {% endfor %}
 
         </div>
+
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border">
-            <h3>BUSINESS NEWS</h3>
+        <div class="col-md-12">
+            <h3 class="text-center">BUSINESS NEWS</h3>
 
             {% for bus_news in business %}
             <h4>{{bus_news.name}}</h4>
@@ -42,11 +42,10 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border">
-            <h3>ENTERTAINMENT NEWS</h3>
+        <div class="col-md-12">
+            <h3 class="text-center">ENTERTAINMENT NEWS</h3>
 
             {% for ent_news in entertainment %}
             <h4>{{ent_news.name}}</h4>
@@ -56,11 +55,10 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border">
-            <h3>SPORTS NEWS</h3>
+        <div class="col-md-12">
+            <h3 class="text-center">SPORTS NEWS</h3>
 
             {% for sports_news in sports %}
             <h4>{{sports_news.name}}</h4>
@@ -70,5 +68,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
