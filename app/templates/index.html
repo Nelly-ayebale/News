@@ -5,23 +5,26 @@
     <div class="row">
         <div class="col-md-2">
             <h3>GENERAL NEWS</h3>
-            <ul>
-                {% for gen_news in general%}
-                <li>{{gen_news.name}}</li>
-            </ul>
+
+            {% for gen_news in general%}
+            <h4>{{gen_news.name}}</h4>
+            <p>{{gen_news.description}}</p>
+            {% endfor %}
+
         </div>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="clo-md-2">
+        <div class="col-md-2 center center">
             <h3>TECHNOLOGY NEWS</h3>
-            <ul>
-                {% for tech_news in technology %}
-                <li>{{tech_news.name}}</li>
-                {% endfor %}
-            </ul>
+
+            {% for tech_news in technology %}
+            <h4>{{tech_news.name}}</h4>
+            <p>{{tech_news.description}}</p>
+            {% endfor %}
+
         </div>
     </div>
 </div>
@@ -30,11 +33,12 @@
     <div class="row">
         <div class="col-md-2">
             <h3>BUSINESS NEWS</h3>
-            <ul>
-                {% for bus_news in business %}
-                <li>{{bus_news.name}}</li>
-                {% endfor %}
-            </ul>
+
+            {% for bus_news in business %}
+            <h4>{{bus_news.name}}</h4>
+            <p>{{bus_news.description}}</p>
+            {% endfor %}
+
         </div>
     </div>
 </div>
@@ -43,11 +47,12 @@
     <div class="row">
         <div class="col-md-2">
             <h3>ENTERTAINMENT NEWS</h3>
-            <ul>
-                {% for ent_news in entertainment %}
-                <li>{{ent_news.name}}</li>
-                {% endfor %}
-            </ul>
+
+            {% for ent_news in entertainment %}
+            <h4>{{ent_news.name}}</h4>
+            <p>{{ent_news.description}}</p>
+            {% endfor %}
+
         </div>
     </div>
 </div>
@@ -56,11 +61,12 @@
     <div class="row">
         <div class="col-md-2">
             <h3>SPORTS NEWS</h3>
-            <ul>
-                {% for sports_news in sports %}
-                <li>{{sports_news.name}}</li>
-                {% endfor %}
-            </ul>
+
+            {% for sports_news in sports %}
+            <h4>{{sports_news.name}}</h4>
+            <p>{{sports_news.description}}</p>
+            {% endfor %}
+
         </div>
     </div>
 </div>
