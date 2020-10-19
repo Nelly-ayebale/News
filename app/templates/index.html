@@ -24,10 +24,12 @@
             <h3 class="text-center">TECHNOLOGY NEWS</h3>
 
             {% for tech_news in technology %}
-            <h4>{{tech_news.name}}</h4>
-            <p>{{tech_news.description}}</p>
-            {% endfor %}
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 tech_news-card">
+                <h3>{{tech_news.name}}</h3>
+                <p>{{tech_news.description|truncate(100)}}</p>
 
+            </div>
+            {% endfor %}
         </div>
 
     </div>
@@ -38,21 +40,25 @@
             <h3 class="text-center">BUSINESS NEWS</h3>
 
             {% for bus_news in business %}
-            <h4>{{bus_news.name}}</h4>
-            <p>{{bus_news.description}}</p>
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 bus_news-card">
+                <h3>{{bus_news.name}}</h3>
+                <p>{{bus_news.description|truncate(100)}}</p>
+            </div>
             {% endfor %}
-
         </div>
     </div>
 </div>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             <h3 class="text-center">ENTERTAINMENT NEWS</h3>
 
             {% for ent_news in entertainment %}
-            <h4>{{ent_news.name}}</h4>
-            <p>{{ent_news.description}}</p>
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 ent_news-card">
+                <h3>{{ent_news.name}}</h3>
+                <p>{{ent_news.description|truncate(100)}}</p>
+            </div>
             {% endfor %}
 
         </div>
@@ -64,9 +70,10 @@
             <h3 class="text-center">SPORTS NEWS</h3>
 
             {% for sports_news in sports %}
-
-            <h4>{{sports_news.name}}</h4>
-            <p>{{sports_news.description}}</p>
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 sports_news-card">
+                <h3>{{sports_news.name}}</h3>
+                <p>{{sports_news.description|truncate(100)}}</p>
+            </div>
             {% endfor %}
 
         </div>
