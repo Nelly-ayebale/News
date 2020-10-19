@@ -6,7 +6,7 @@ news_url = None
 article_url = None
 
 def configure_request(app):
-    global apiKey, news_url
+    global apiKey, news_url,article_url
     apiKey = app.config['NEWS_API_KEY']
     news_url = app.config['NEWS_SOURCE_BASE_URL']
     article_url = app.config['NEWS_ARTICLE_BASE_URL']
@@ -61,14 +61,14 @@ def get_articles(source_id):
 
         if get_articles_response['articles']:
             articles_results_list = get_articles_response['articles']
-            articles_results = process_articles(articles_result_list)
+            articles_results = process_articles(articles_results_list)
     return articles_results
 
 def process_articles(article_list):
     '''
     Function that processes the articles_results and returns a list of objects
     '''
-    article_results = []
+    articles_results = []
     for article_item in article_list:
         source = article_item.get('source')
         author = article_item.get('author')
@@ -78,3 +78,7 @@ def process_articles(article_list):
         urlToImage = article_item.get('urlToImage')
         publishedAt = article_item.get('publishedAt')
         content = article_item.get('content')
+
+        articles_object = Articles(source, author,title,description, url, urlToImage, publishedAt, content)
+        articles_results.append(articles_object)
+    return articles_results

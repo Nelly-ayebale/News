@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% for article in articles %}
+        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-3 articles-card">
+            <h3>{{article.title}}</h3>
+            <h4>This article was posted on {{article.publishedAt}}</h4>
+            <p>{{article.description}}</p>
+
+            <img src="{{article.urlToImage}}" class="img-responsive" style="height: 30px;">
+            <a href="{{article.url}}">Full Article Available</a>
+
+        </div>
+        {% endfor%}
+    </div>
+</div>
+{% endblock%}
