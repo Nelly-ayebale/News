@@ -1,1 +1,31 @@
-{%extends 'bootstrap/base.html' %}
+{%extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+
+<h3>GENERAL NEWS</h3>
+<ul>
+    {{macro.displayNewsList(general)}}
+</ul>
+
+<h3>TECHNOLOGY NEWS</h3>
+<ul>
+    {{macro.displayNewsList(technology)}}
+</ul>
+
+<h3>BUSINESS NEWS</h3>
+<ul>
+    {{macro.displayNewsList(business)}}
+</ul>
+
+<h3>ENTERTAINMENT NEWS</h3>
+<ul>
+    {{macro.displayNewsList(entertainment)}}
+</ul>
+
+<h3>SPORTS NEWS</h3>
+<ul>
+    {{macro.displayNewsList(sports)}}
+</ul>
+
+{% endblock %}
