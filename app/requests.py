@@ -30,7 +30,7 @@ def get_news(category):
 
 def process_results(news_list):
     '''
-    Function that processes the news_result anf returns a list of objects
+    Function that processes the news_result and returns a list of objects
     '''
 
     news_results=[]
@@ -63,3 +63,18 @@ def get_articles(source_id):
             articles_results_list = get_articles_response['articles']
             articles_results = process_articles(articles_result_list)
     return articles_results
+
+def process_articles(article_list):
+    '''
+    Function that processes the articles_results and returns a list of objects
+    '''
+    article_results = []
+    for article_item in article_list:
+        source = article_item.get('source')
+        author = article_item.get('author')
+        title = article_item.get('title')
+        description = article_item.get('description')
+        url= article_item.get('url')
+        urlToImage = article_item.get('urlToImage')
+        publishedAt = article_item.get('publishedAt')
+        content = article_item.get('content')
