@@ -17,3 +17,4 @@ def index():
     title = "Welcome to your news"
 
     return render_template('index.html', title = title, general = gen_news, technology = tech_news, business= bus_news, entertainment = ent_news, sports = sport_news)
+
